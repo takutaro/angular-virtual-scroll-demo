@@ -7,7 +7,8 @@ import 'dart:math' as Math;
   template: '''
     <h1>&lt;virtual-scroll&gt;</h1>
 
-    <virtual-scroll [items]="items" (update)="viewPortItems=\$event" style="width:auto; height:75vh;">
+    <button (click)="plus()">PLUS</button>
+    <virtual-scroll [items]="items" [chgTrigger]="chgTrigger" (update)="viewPortItems=\$event" style="width:auto; height:75vh;">
       <div *ngFor="let c of viewPortItems;" style="background-color:{{c[1]}}">{{c[0]}}☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆</div>
     </virtual-scroll>
     ''',
@@ -16,12 +17,18 @@ import 'dart:math' as Math;
 class AppComponent {
   var colors = ['#88F','#8F8','#8FF','#F88','#F8F','#FF8','#AAA'];
   var items = [];
+  int chgTrigger = 0;
   var viewPortItems;
 
+  var _rand = new Math.Random();
+
   AppComponent() {
-    var rand = new Math.Random();
-    for (int i = 0; i < 100000; i++) {
-      items.add(['$i', colors.elementAt(rand.nextInt(7))]);
+    for (int i = 0; i < 100; i++) {
+      this.items.add(['$i', colors.elementAt(_rand.nextInt(7))]);
     }
+  }
+  plus() {
+    this.items.add(['${this.items.length}', colors.elementAt(_rand.nextInt(7))]);
+    this.chgTrigger++;
   }
 }

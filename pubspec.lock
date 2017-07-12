@@ -60,7 +60,7 @@ packages:
       name: cli_util
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.1.1"
+    version: "0.1.2"
   code_builder:
     description:
       name: code_builder
@@ -192,7 +192,7 @@ packages:
       name: meta
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.5"
+    version: "1.1.0"
   package_config:
     description:
       name: package_config
@@ -252,7 +252,7 @@ packages:
       name: stack_trace
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.7.4"
+    version: "1.8.0"
   stream_transformers:
     description:
       name: stream_transformers
@@ -280,10 +280,10 @@ packages:
   virtual_scroll:
     description:
       ref: dart-dev
-      resolved-ref: c60a7f7b40b7abbaaeac78add5d5588014b7fc81
-      url: "git://github.com/takutaro/angular-virtual-scroll.git"
+      resolved-ref: a4017366bd320c973035421a0f906760fb925be6
+      url: "https://github.com/takutaro/angular-virtual-scroll.git"
     source: git
-    version: "0.0.1"
+    version: "0.0.2"
   watcher:
     description:
       name: watcher
@@ -297,4 +297,4 @@ packages:
     source: hosted
     version: "2.1.12"
 sdks:
-  dart: ">=1.24.0 <2.0.0"
+  dart: ">=1.24.0 <2.0.0-dev.infinity"
