@@ -9,18 +9,6 @@ class Item {
 
 @Component(
   selector: 'my-app',
-  template: '''
-    <h1>&lt;virtual-scroll&gt;</h1>
-
-    <button (click)="add()" style="margin: 4px;">ADD</button>
-
-    <virtual-scroll [items]="items" [chgTrigger]="chgTrigger" (update)="viewPortItems=\$event" class="scrollview">
-      <div *ngFor="let item of viewPortItems;" class="item">
-        <span class="circle" style="background-color:{{item.color}}">{{item.nbr}}</span>
-        {{item.name}}<br>Hello.<br>Good bye.
-      </div>
-    </virtual-scroll>
-    ''',
   styles: const ['''
     .scrollview {
       width: auto;
@@ -43,6 +31,18 @@ class Item {
       color: white;
     }
   '''],
+  template: '''
+    <h1>&lt;virtual-scroll&gt;</h1>
+
+    <button (click)="add()" style="margin: 4px;">ADD</button>
+
+    <virtual-scroll [items]="items" [chgTrigger]="chgTrigger" (update)="viewPortItems=\$event" class="scrollview">
+      <div *ngFor="let item of viewPortItems;" class="item">
+        <span class="circle" style="background-color:{{item.color}}">{{item.nbr}}</span>
+        {{item.name}}<br>Hello.<br>Good bye.
+      </div>
+    </virtual-scroll>
+    ''',
   directives: const [VirtualScrollComponent],
 )
 class AppComponent {
@@ -73,5 +73,3 @@ class AppComponent {
     this.chgTrigger++;
   }
 }
-
-

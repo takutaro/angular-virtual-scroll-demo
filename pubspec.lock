@@ -279,8 +279,8 @@ packages:
     version: "0.9.0+3"
   virtual_scroll:
     description:
-      ref: dart-dev
-      resolved-ref: a4017366bd320c973035421a0f906760fb925be6
+      ref: HEAD
+      resolved-ref: "393ec02b6a23402291ec1f2ad3349dcc160acec6"
       url: "https://github.com/takutaro/angular-virtual-scroll.git"
     source: git
     version: "0.0.2"
