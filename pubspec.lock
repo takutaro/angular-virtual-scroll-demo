@@ -78,7 +78,7 @@ packages:
       name: collection
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.14.2"
+    version: "1.14.3"
   convert:
     description:
       name: convert
@@ -90,7 +90,7 @@ packages:
       name: crypto
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.1"
+    version: "2.0.2"
   csslib:
     description:
       name: csslib
@@ -114,7 +114,7 @@ packages:
       name: fixnum
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.10.5"
+    version: "0.10.6"
   front_end:
     description:
       name: front_end
@@ -144,7 +144,7 @@ packages:
       name: http
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.11.3+13"
+    version: "0.11.3+14"
   http_parser:
     description:
       name: http_parser
@@ -192,13 +192,13 @@ packages:
       name: meta
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.1.0"
+    version: "1.1.1"
   package_config:
     description:
       name: package_config
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.1"
+    version: "1.0.2"
   path:
     description:
       name: path
@@ -210,7 +210,7 @@ packages:
       name: plugin
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.0"
+    version: "0.2.0+1"
   pool:
     description:
       name: pool
@@ -280,10 +280,10 @@ packages:
   virtual_scroll:
     description:
       ref: HEAD
-      resolved-ref: "393ec02b6a23402291ec1f2ad3349dcc160acec6"
+      resolved-ref: c38f345d99a73285390351db9d762f76ec7abaff
       url: "https://github.com/takutaro/angular-virtual-scroll.git"
     source: git
-    version: "0.0.2"
+    version: "0.0.3"
   watcher:
     description:
       name: watcher
