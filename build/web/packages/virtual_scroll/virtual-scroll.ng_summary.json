@@ -96,10 +96,10 @@
       ],
       "template": {
         "encapsulation": 0,
-        "template": "    <div class=\"total-padding\" [style.height]=\"scrollHeight.toString() + 'px'\"></div>\n    <div class=\"scrollable-content\" #content [style.transform]=\"'translateY(' + topPadding.toString() + 'px)'\">\n      <ng-content></ng-content>\n    </div>\n  ",
+        "template": "    <div class=\"total-padding\" #padding  tabindex=\"-1\" [style.height]=\"scrollHeight.toString() + 'px'\"></div>\n    <div class=\"scrollable-content\" #content [style.transform]=\"'translateY(' + topPadding.toString() + 'px)'\">\n      <ng-content></ng-content>\n    </div>\n  ",
         "templateUrl": "asset:virtual_scroll/lib/virtual-scroll.dart",
         "styles": [
-          "    :host {\n      overflow: hidden;\n      overflow-y: auto;\n      position: relative;\n      display: block;\n    }\n    .total-padding {\n      width: 1px;\n      opacity: 0;\n    }\n    .scrollable-content {\n      top: 0;\n      left: 0;\n      width: 10000px;\n      height: 100%;\n      position: absolute;\n    }\n  "
+          "    :host {\n      overflow: hidden;\n      overflow-y: auto;\n      position: relative;\n      display: block;\n    }\n    .total-padding {\n      width: 1px;\n      opacity: 0;\n    }\n    .scrollable-content {\n      top: 0;\n      left: 0;\n      width: 10000px;\n      height: 100%;\n      position: absolute;\n      -webkit-overflow-scrolling: touch;\n    }\n  "
         ],
         "styleUrls": [],
         "ngContentSelectors": [
@@ -110,6 +110,19 @@
       "viewProviders": [],
       "queries": [],
       "viewQueries": [
+        {
+          "selectors": [
+            {
+              "value": "padding",
+              "identifier": null,
+              "identifierIsInstance": false
+            }
+          ],
+          "descendants": true,
+          "first": true,
+          "propertyName": "paddingElementRef",
+          "read": null
+        },
         {
           "selectors": [
             {
