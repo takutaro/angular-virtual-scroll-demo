@@ -280,10 +280,10 @@ packages:
   virtual_scroll:
     description:
       ref: HEAD
-      resolved-ref: c38f345d99a73285390351db9d762f76ec7abaff
+      resolved-ref: "02f2310b36b8285c8bfc08800ab5bbe5d9992994"
       url: "https://github.com/takutaro/angular-virtual-scroll.git"
     source: git
-    version: "0.0.3"
+    version: "0.0.4"
   watcher:
     description:
       name: watcher
