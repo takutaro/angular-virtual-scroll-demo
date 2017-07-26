@@ -81,12 +81,10 @@
       },
       "changeDetection": 6,
       "inputs": {
-        "items": "items",
-        "chgTrigger": "chgTrigger"
+        "items": "items"
       },
       "inputTypes": {
-        "items": " List",
-        "chgTrigger": " int"
+        "items": " List"
       },
       "outputs": {
         "update": "update"
