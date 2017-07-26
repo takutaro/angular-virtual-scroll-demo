@@ -36,7 +36,7 @@ class Item {
 
     <button (click)="add()" style="margin: 4px;">ADD</button>
 
-    <virtual-scroll [items]="items" [chgTrigger]="chgTrigger" (update)="viewPortItems=\$event" class="scrollview">
+    <virtual-scroll [items]="items" (update)="viewPortItems=\$event" class="scrollview">
       <div *ngFor="let item of viewPortItems;" class="item">
         <span class="circle" style="background-color:{{item.color}}">{{item.nbr}}</span>
         {{item.name}}<br>Hello.<br>Good bye.
@@ -51,7 +51,6 @@ class AppComponent {
                 "Ιι イオタ", "Κκ カッパ", "Λλ ラムダ", "Μμ ミュー", "Νν ニュー", "Ξξ クシー", "Οο オミクロン", "Ππ パイ",
                 "Ρρ ロー", "Σσς シグマ", "Ττ タウ", "Υυ ユプシロン", "Φφ ファイ", "Χχ キー", "Ψψ プシー", "Ωω オメガ" ];
   List<Item> items = [];
-  int chgTrigger = 0;
   var viewPortItems;
   var _rand = new Math.Random();
 
@@ -70,6 +69,6 @@ class AppComponent {
       colors.elementAt(_rand.nextInt(colors.length)),
       names.elementAt(_rand.nextInt(names.length))
     ));
-    this.chgTrigger++;
+    this.items = this.items.toList(); // Make new list to detect changes.
   }
 }
