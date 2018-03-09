@@ -1,6 +1,7 @@
-import 'package:angular2/platform/browser.dart';
+import 'dart:async';
+import 'package:angular/angular.dart';
 import 'app_component.dart';
 
-void main() {
+Future<Null> main() async {
   bootstrap(AppComponent);
 }
