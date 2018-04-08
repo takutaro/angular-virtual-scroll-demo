@@ -14,8 +14,8 @@ https://takutaro.github.io/angular-virtual-scroll-demo/build/web/
 
 ## Requirement
 
-* Dart >= 1.24
-* AngularDart >= 3.1
+* Dart >= 2.0.0
+* AngularDart >= 5.0.0
 * Modern browser
 
 ## Installation
@@ -30,13 +30,13 @@ $ pub get
 
 ```bash
 $ cd angular-virtual-scroll-demo/
-$ pub serve
+$ pub run build_runner serve
 (Open http://localhost:8080/ in your browser.)
 ```
 
 ```bash
 $ cd angular-virtual-scroll-demo/
-$ pub build
+$ pub run build_runner build --define "build_web_compilers|entrypoint=compiler=dart2js" -o build
 (Open ./build/web/ in your browser.)
 ```
 
