@@ -28,13 +28,13 @@ $ pub get
 
 ```bash
 $ cd angular-virtual-scroll-demo/
-$ pub run build_runner serve
+$ webdev serve
 (Open http://localhost:8080/ in your browser.)
 ```
 
 ```bash
 $ cd angular-virtual-scroll-demo/
-$ pub run build_runner build --define "build_web_compilers|entrypoint=compiler=dart2js" -o build
+$ webdev build
 (Open ./build/web/ in your browser.)
 ```
 
