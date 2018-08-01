@@ -1,21 +1,19 @@
-virtual-scroll-demo for AngularDart
-==============================
-
+# virtual-scroll-demo for AngularDart
 
 ## Description
 
 A scrolling demonstration of a large list using:<br>
-https://github.com/takutaro/angular-virtual-scroll
+<https://github.com/takutaro/angular-virtual-scroll>
 
 ## Demo
 
 Live demo.<br>
-https://takutaro.github.io/angular-virtual-scroll-demo/build/web/
+<https://takutaro.github.io/angular-virtual-scroll-demo/build/web/>
 
 ## Requirement
 
-* Dart >= 2.0.0
-* AngularDart >= 5.0.0
+* Dart >=2.0.0-dev.69.4
+* AngularDart >= 5.0.0-beta"
 * Modern browser
 
 ## Installation

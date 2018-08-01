@@ -1,6 +1,5 @@
 import 'package:angular/angular.dart';
 import 'package:virtual_scroll/virtual_scroll.dart';
-import 'app_component.template.dart';
 import 'dart:math' as Math;
 
 class Item {
