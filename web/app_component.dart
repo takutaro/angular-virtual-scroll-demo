@@ -75,11 +75,11 @@ class AppComponent {
   ];
   List<Item> items = [];
   var viewPortItems;
-  var _rand = new Math.Random();
+  var _rand = Math.Random();
 
   AppComponent() {
     for (int i = 0; i < 10000; i++) {
-      this.items.add(new Item(
+      this.items.add(Item(
             '$i',
             colors.elementAt(_rand.nextInt(colors.length)),
             names.elementAt(_rand.nextInt(names.length)),
@@ -87,7 +87,7 @@ class AppComponent {
     }
   }
   add() {
-    this.items.add(new Item(
+    this.items.add(Item(
           '${this.items.length}',
           colors.elementAt(_rand.nextInt(colors.length)),
           names.elementAt(_rand.nextInt(names.length)),

@@ -12,8 +12,8 @@ Live demo.<br>
 
 ## Requirement
 
-* Dart >=2.0.0-dev.69.4
-* AngularDart >= 5.0.0-beta"
+* Dart >=2.0.0
+* AngularDart >= 5.0.0
 * Modern browser
 
 ## Installation
