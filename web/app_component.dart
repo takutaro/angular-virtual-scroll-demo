@@ -9,7 +9,7 @@ class Item {
 
 @Component(
   selector: 'my-app',
-  styles: const [
+  styles: [
     '''
     .scrollview {
       width: auto;
@@ -43,7 +43,7 @@ class Item {
     </virtual-scroll>
     <button (click)="add()" style="margin: 4px;">ADD</button>
     ''',
-  directives: const [VirtualScrollComponent, NgFor],
+  directives: [VirtualScrollComponent, NgFor],
 )
 class AppComponent {
   var colors = ['#222', '#228', '#282', '#288', '#F22', '#828', '#888'];
