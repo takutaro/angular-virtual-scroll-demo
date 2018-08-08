@@ -10,8 +10,8 @@ dependencies:
       url: https://github.com/takutaro/angular-virtual-scroll.git
 
 dev_dependencies:
-  angular_analyzer_plugin:
   angular_test:
+  angular_analyzer_plugin:
   build_runner:
   build_test:
   build_web_compilers:

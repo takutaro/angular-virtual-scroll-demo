@@ -1,0 +1,10 @@
+<h1>&lt;virtual-scroll&gt;</h1>
+<virtual-scroll [items]="items" (update)="viewPortItems=$event" class="scrollview">
+  <div *ngFor="let item of viewPortItems" class="item">
+    <span class="circle" style="background-color:{{item.color}}">{{item.nbr}}</span>
+    {{item.name}}
+    <br>Hello.
+    <br>Good bye.
+  </div>
+</virtual-scroll>
+<button (click)="add()" style="margin: 4px;">ADD</button>

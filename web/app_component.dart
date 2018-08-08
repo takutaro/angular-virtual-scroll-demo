@@ -1,6 +1,6 @@
+import 'dart:math' as Math;
 import 'package:angular/angular.dart';
 import 'package:virtual_scroll/virtual_scroll.dart';
-import 'dart:math' as Math;
 
 class Item {
   String nbr, color, name;
@@ -9,40 +9,8 @@ class Item {
 
 @Component(
   selector: 'my-app',
-  styles: [
-    '''
-    .scrollview {
-      width: auto;
-      height:75vh;
-    }
-    .item {
-      display: flex;
-      background-color: #EEE;
-      margin-bottom: 2px;
-    }
-    .circle {
-      margin: 4px;
-      margin-right: 16px;
-      width: 50px;
-      height: 50px;
-      border-radius: 25px;
-      display: flex;
-    	align-items: center;
-      justify-content: center;
-      color: white;
-    }
-  '''
-  ],
-  template: '''
-    <h1>&lt;virtual-scroll&gt;</h1>
-    <virtual-scroll [items]="items" (update)="viewPortItems=\$event" class="scrollview">
-      <div *ngFor="let item of viewPortItems" class="item">
-        <span class="circle" style="background-color:{{item.color}}">{{item.nbr}}</span>
-        {{item.name}}<br>Hello.<br>Good bye.
-      </div>
-    </virtual-scroll>
-    <button (click)="add()" style="margin: 4px;">ADD</button>
-    ''',
+  templateUrl: 'app_component.html',
+  styleUrls: ['app_component.css'],
   directives: [VirtualScrollComponent, NgFor],
 )
 class AppComponent {

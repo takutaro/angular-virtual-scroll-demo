@@ -1,4 +1,6 @@
 .packages
+app_component.css
+app_component.html
 index.html
 main.dart.js
 packages/$sdk/_internal/ddc_sdk.sum

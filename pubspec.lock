@@ -392,7 +392,7 @@ packages:
       name: protobuf
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.9.0+1"
+    version: "0.9.1"
   pub_semver:
     dependency: transitive
     description:
@@ -538,7 +538,7 @@ packages:
     description:
       path: "."
       ref: HEAD
-      resolved-ref: a10fc41ef03e36ad4053b7bd7b8cefc809b4f5c3
+      resolved-ref: "8c57359f57e8fcc2dfaa9f37a574af469097fe45"
       url: "https://github.com/takutaro/angular-virtual-scroll.git"
     source: git
     version: "0.2.2"
